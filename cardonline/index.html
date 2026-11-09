@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#17191b">
+<meta name="description" content="Электронная визитка Кирилла Погудина, технического директора УРАЛНИМБУС.">
+<title>Кирилл Погудин — УРАЛНИМБУС</title>
+<style>
+:root{--bg:#17191b;--panel:#202326;--text:#f2f3f3;--muted:#a6abad;--line:#3a3f42;--accent:#ee7040}
+*{box-sizing:border-box}html{min-height:100%;background:var(--bg)}body{margin:0;min-height:100vh;background:radial-gradient(ellipse at 50% 0%,rgba(238,112,64,.10),transparent 42%),var(--bg);color:var(--text);font-family:Arial,Helvetica,sans-serif;display:grid;place-items:center;padding:28px 18px}
+a{color:inherit;text-decoration:none}.topline{position:fixed;inset:0 0 auto;height:5px;background:var(--accent)}
+.card{width:min(100%,520px);border:1px solid var(--line);background:linear-gradient(145deg,#222629,#1d2022);position:relative;overflow:hidden;box-shadow:0 24px 80px rgba(0,0,0,.28)}.card:before{content:"";position:absolute;width:290px;height:290px;border:1px solid rgba(238,112,64,.16);transform:rotate(45deg);right:-190px;top:-170px;pointer-events:none}
+.brand{padding:30px 34px 25px;border-bottom:1px solid var(--line);display:flex;align-items:center;gap:17px}.brand img{width:66px;height:44px;object-fit:contain}.brand-name{font-size:15px;font-weight:800;letter-spacing:.17em}.brand-sub{display:block;margin-top:5px;font-size:9px;letter-spacing:.2em;color:var(--muted)}
+.content{padding:38px 34px 34px}.eyebrow{font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);font-weight:700}.name{font-size:clamp(29px,7vw,39px);line-height:1.08;letter-spacing:-.04em;margin:15px 0 9px;font-weight:800}.role{font-size:14px;color:var(--muted);margin:0}.rule{height:1px;background:var(--line);margin:29px 0 25px}.contacts{display:grid;gap:17px}.contact-label{display:block;color:var(--muted);font-size:9px;letter-spacing:.17em;text-transform:uppercase;margin-bottom:5px}.contact-value{font-size:16px;font-weight:700;overflow-wrap:anywhere}.contact-value:hover{color:var(--accent)}
+.actions{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-top:30px}.button{min-height:49px;display:flex;align-items:center;justify-content:center;padding:12px 14px;border:1px solid var(--accent);font-size:12px;font-weight:700;letter-spacing:.04em;transition:.18s}.button.primary{background:var(--accent);color:#17191b}.button:hover{background:var(--accent);color:#17191b}.button.save{grid-column:1/-1;border-color:var(--line);color:var(--text)}.button.save:hover{border-color:var(--accent)}
+.footer{padding:17px 34px;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:12px;color:#858c8f;font-size:9px;letter-spacing:.08em;text-transform:uppercase}.footer span:last-child{color:var(--accent)}
+@media(max-width:520px){body{padding:20px 14px}.brand{padding:25px 24px 21px}.content{padding:31px 24px 26px}.footer{padding:15px 24px}.actions{grid-template-columns:1fr}.button.save{grid-column:auto}}
+</style>
+</head>
+<body>
+<div class="topline"></div>
+<main class="card">
+  <div class="brand">
+    <img src="logo-white.svg" alt="Логотип УРАЛНИМБУС">
+    <div><div class="brand-name">УРАЛНИМБУС</div><span class="brand-sub">ИНЖЕНЕРНЫЕ РЕШЕНИЯ</span></div>
+  </div>
+  <section class="content">
+    <div class="eyebrow">Электронная визитка</div>
+    <h1 class="name">Погудин Кирилл Владимирович</h1>
+    <p class="role">Технический директор</p>
+    <div class="rule"></div>
+    <div class="contacts">
+      <div><span class="contact-label">Телефон</span><a class="contact-value" href="tel:+79655491787">+7 965 549-17-87</a></div>
+      <div><span class="contact-label">Электронная почта</span><a class="contact-value" href="mailto:Kirill_pogudin@mail.ru">Kirill_pogudin@mail.ru</a></div>
+    </div>
+    <div class="actions">
+      <a class="button primary" href="tel:+79655491787">Позвонить</a>
+      <a class="button" href="mailto:Kirill_pogudin@mail.ru">Написать</a>
+      <a class="button" href="https://t.me/+79655491787" target="_blank" rel="noopener noreferrer" aria-label="Написать в Telegram">Telegram</a>
+      <a class="button save" href="contact.vcf" download>Сохранить контакт</a>
+    </div>
+  </section>
+  <footer class="footer"><span>УРАЛНИМБУС</span><span>Точность. Система. Результат.</span></footer>
+</main>
+</body>
+</html>
